@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="좋은 상품을 더 좋은 가격에 소개하는 SHARE PICK">
+  <title>SHARE PICK</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="SHARE PICK 홈">
+      <span class="brand-bag">🛍️</span>
+      <span class="brand-share">SHARE</span>
+      <span class="brand-pick">PICK</span>
+    </a>
+    <p class="tagline">좋은 상품을, 더 좋은 가격에! ✨</p>
+  </header>
+
+  <main id="top" class="page">
+    <aside class="notice">
+      <strong>✱</strong>
+      이 포스팅은 토스쇼핑 쉐어링크 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.
+    </aside>
+
+    <nav class="category-nav" aria-label="상품 카테고리">
+      <button class="nav-button active" data-target="special">🔥 오늘의 특가</button>
+      <button class="nav-button" data-target="food">🍜 식품</button>
+      <button class="nav-button" data-target="beauty">💄 뷰티</button>
+      <button class="nav-button" data-target="living">🏠 생활</button>
+      <button class="nav-button" data-target="health">💊 건강</button>
+    </nav>
+
+    <section id="special" class="special-section">
+      <div class="special-copy">
+        <span class="fire">🔥</span>
+        <h1>오늘의 <em>특가</em></h1>
+        <p><strong>오늘만</strong> 특가!<br>놓치지 마세요!</p>
+        <span class="daily-badge">📅 매일 업데이트!</span>
+      </div>
+
+      <div class="special-products" id="specialProducts"></div>
+
+      <button class="slider-button prev" id="prevSpecial" aria-label="이전 상품">‹</button>
+      <button class="slider-button next" id="nextSpecial" aria-label="다음 상품">›</button>
+    </section>
+
+    <div class="slider-dots" id="specialDots" aria-label="특가 슬라이드"></div>
+
+    <div id="categorySections"></div>
+  </main>
+
+  <footer class="site-footer">
+    <p>ⓘ 일부 링크는 제휴 링크이며, 구매 시 일정 수수료를 받을 수 있습니다.</p>
+    <p>© 2026 SHARE PICK</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
