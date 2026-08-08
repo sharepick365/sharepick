@@ -1,4 +1,4 @@
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -20,7 +20,7 @@ body {
   margin: 0;
   color: var(--text);
   background: #fff;
-  font-family: "Pretendard", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 button,
@@ -513,4 +513,10 @@ button {
     width: 92px;
     font-size: 52px;
   }
+}
+.product-image img {
+  width: 100%;
+  height: 190px;
+  object-fit: contain;
+  display: block;
 }

@@ -4,10 +4,10 @@ const categories = [
     name: "식품",
     icon: "🍜",
     products: [
-      { emoji: "🍜", name: "오뚜기 진라면 매운맛 5개입", desc: "매콤하고 진한 국물!", link: "#" },
-      { emoji: "🥫", name: "동원참치 라이트 스탠다드", desc: "담백하고 맛있는 참치!", link: "#" },
-      { emoji: "💧", name: "아이시스 8.0 2L 6병", desc: "깨끗하고 깔끔한 물!", link: "#" },
-      { emoji: "🥣", name: "포스트 콘푸라이트 600g", desc: "바삭하고 고소한 시리얼!", link: "#" }
+     { image: "kimchi.png", name: "매운 실비 김치 3kg", desc: "매콤하게 당기는 실비김치!", link: "https://toss.im/_m/pXeWEdi7" },
+{ image: "hobak.png", name: "제주 미니 밤호박 5kg", desc: "달콤하고 포슬포슬한 미니밤호박!", link: "https://toss.im/_m/NVV6IyXp" },
+{ image: "hambak.png", name: "애슐리 함박 스테이크 360g", desc: "간편하게 즐기는 함박스테이크!", link: "https://toss.im/_m/VKjDBkw8" },
+{ image: "pizza.png", name: "애슐리 크런치즈엣지 피자", desc: "바삭하고 고소한 치즈 피자!", link: "https://toss.im/_m/JWnXIeLD" }
     ]
   },
   {
@@ -15,10 +15,10 @@ const categories = [
     name: "뷰티",
     icon: "💄",
     products: [
-      { emoji: "🧴", name: "라네즈 립 슬리핑 마스크", desc: "입술 각질 케어 & 보습", link: "#" },
-      { emoji: "🧪", name: "넘버즈인 3번 결광 세럼", desc: "맑고 건강한 피부 케어", link: "#" },
-      { emoji: "☀️", name: "닥터지 브라이트닝 업 선", desc: "자연스러운 톤업을 한 번에", link: "#" },
-      { emoji: "🧼", name: "일리윤 세라마이드 워시", desc: "순하고 촉촉한 바디 클렌저", link: "#" }
+      { image: "tomato.png", name: "성분에디터 그린토마토 포어 리프팅 앰플 플러스 30ml, 2개", desc: "모공 탄력 케어!", link: "https://toss.im/_m/LEw80DlD" },
+{ image: "cream.png", name: "레이디어 히알루론산 촉촉 수분크림 100ml, 1개", desc: "촉촉한 수분 케어!", link: "https://toss.im/_m/x29i1Vb6" },
+{ image: "mist.png", name: "닥터멜락신 마이너스 오점칠 오일 미스트 100ml, 1개", desc: "간편한 미스트 케어!", link: "https://toss.im/_m/ZPC8GPAz" },
+{ image: "madeca.png", name: "센텔리안24 마데카 크림 타이트 리프팅 50ml, 5개 + 15ml, 2개", desc: "탄탄한 리프팅 케어!", link: "https://toss.im/_m/7wRcB6Tb" }
     ]
   },
   {
@@ -26,40 +26,40 @@ const categories = [
     name: "생활",
     icon: "🏠",
     products: [
-      { emoji: "🧻", name: "베베숲 오리지널 물티슈", desc: "부드럽고 도톰한 데일리 물티슈", link: "#" },
-      { emoji: "🧽", name: "크리넥스 클린케어", desc: "더 도톰하고 부드러운 사용감", link: "#" },
-      { emoji: "🫧", name: "피죤 섬유유연제", desc: "은은한 향과 부드러운 옷감", link: "#" },
-      { emoji: "🧺", name: "지퍼백 이지 오픈형", desc: "간편한 보관의 필수 아이템", link: "#" }
+      { image: "shoes.png", name: "신발 세탁망 그레이 19×39cm, 2개", desc: "신발 세탁을 간편하게!", link: "https://toss.im/_m/fL6eQNbs" },
+{ image: "multi.png", name: "무아스 더 큐브 마그넷 3구 USB 고용량 멀티탭", desc: "깔끔하고 편리한 멀티탭!", link: "https://toss.im/_m/fsyl0Ibs" },
+{ image: "cleaner.png", name: "무아스 길이조절 올인원 스탠드 테이블 클리너", desc: "구석구석 간편한 청소!", link: "https://toss.im/_m/zns3g602" },
+{ image: "wipes.png", name: "크리넥스 마이비데 클린케어 화장실용 물티슈 40매, 9팩", desc: "깔끔한 욕실 필수템!", link: "https://toss.im/_m/vDaQbRld" }
     ]
   },
   {
     id: "health",
-    name: "건강",
+    name: "건강식품",
     icon: "💊",
     products: [
-      { emoji: "🟩", name: "세노비스 수퍼바이오틱스", desc: "장 건강 & 유산균 관리", link: "#" },
-      { emoji: "🟨", name: "락토핏 골드", desc: "장 건강, 온 가족 유산균", link: "#" },
-      { emoji: "🍃", name: "GNM 종합비타민 미네랄", desc: "하루 한 알로 영양 밸런스", link: "#" },
-      { emoji: "🟥", name: "정관장 홍삼 스틱", desc: "간편하게 챙기는 홍삼", link: "#" }
+      { image: "hongsam.png", name: "풍년보감 고려홍삼정 에브리데이100", desc: "간편하게 챙기는 홍삼!", link: "https://toss.im/_m/vbb6F8Nj" },
+{ image: "vitaminb.png", name: "대웅제약 임팩타민 비타민B", desc: "하루 한 알 영양 관리!", link: "https://toss.im/_m/9PFwnVr3" },
+{ image: "olle.png", name: "Mommy care 올레즙", desc: "상큼하게 챙기는 건강즙!", link: "https://toss.im/_m/7j32F0Ht" },
+{ image: "lutein.png", name: "퍼니트 미니 루테인지아잔틴", desc: "간편한 눈 건강 관리!", link: "https://toss.im/_m/xLYkZrH4" }
     ]
   }
 ];
 
 const specialSlides = [
   [
-    { emoji: "🍜", name: "농심 신라면 10개입", desc: "얼큰하고 시원한 국물!", link: "#" },
-    { emoji: "🍘", name: "비비고 재래김 16봉", desc: "바삭하고 고소한 김!", link: "#" },
-    { emoji: "🥛", name: "매일우유 오리지널 1L", desc: "신선한 1등급 원유!", link: "#" }
+   { image: "dakgalbi.png", name: "순살 닭갈비 500g × 2개", desc: "69% 특가 · 10,900원", link: "https://toss.im/_m/rcCpLxri" },
+    { image: "aloe.png", name: "알로에베라 모이스처 수딩젤 300ml × 5개", desc: "87% 특가 · 7,300원", link: "https://toss.im/_m/BeEOU487" },
+    { image: "hongsam.png", name: "풍년보감 고려홍삼정 에브리데이100", desc: "간편하게 챙기는 홍삼!", link: "https://toss.im/_m/vbb6F8Nj" }
   ],
   [
-    { emoji: "🍪", name: "초코칩 쿠키 대용량", desc: "달콤하고 바삭한 간식!", link: "#" },
-    { emoji: "🧴", name: "세라마이드 바디워시", desc: "민감한 피부도 순하게!", link: "#" },
-    { emoji: "💊", name: "루테인 눈 건강 캡슐", desc: "매일 간편한 눈 건강 관리!", link: "#" }
+    { image: "cleaner.png", name: "무아스 길이조절 올인원 스탠드 테이블 클리너", desc: "구석구석 간편한 청소!", link: "https://toss.im/_m/zns3g602" },
+    { image: "lutein.png", name: "퍼니트 미니 루테인지아잔틴", desc: "간편한 눈 건강 관리!", link: "https://toss.im/_m/xLYkZrH4" },
+    { image: "mist.png", name: "닥터멜락신 마이너스 오점칠 오일 미스트 100ml, 1개", desc: "간편한 미스트 케어!", link: "https://toss.im/_m/ZPC8GPAz" }
   ],
   [
-    { emoji: "🥤", name: "제철 과채 건강즙", desc: "하루 한 포 간편하게!", link: "#" },
-    { emoji: "🧻", name: "도톰한 물티슈 80매", desc: "생활 속 필수품!", link: "#" },
-    { emoji: "🧺", name: "대용량 지퍼백 세트", desc: "냉장·냉동 보관을 깔끔하게!", link: "#" }
+    { image: "pizza.png", name: "애슐리 크런치즈엣지 피자", desc: "바삭하고 고소한 치즈 피자!", link: "https://toss.im/_m/JWnXIeLD" },
+    { image: "shoes.png", name: "신발 세탁망 그레이 19×39cm, 2개", desc: "신발 세탁을 간편하게!", link: "https://toss.im/_m/fL6eQNbs" },
+    { image: "wipes.png", name: "크리넥스 마이비데 클린케어 화장실용 물티슈 40매, 9팩", desc: "깔끔한 욕실 필수템!", link: "https://toss.im/_m/vDaQbRld" }
   ]
 ];
 
@@ -71,7 +71,9 @@ let specialIndex = 0;
 function productCard(product) {
   return `
     <article class="product-card">
-      <div class="product-image" aria-hidden="true">${product.emoji}</div>
+      <div class="product-image">
+  ${product.image ? `<img src="${product.image}" alt="${product.name}">` : product.emoji}
+</div>
       <h3>${product.name}</h3>
       <p>${product.desc}</p>
       <a class="price-link" href="${product.link}" target="_blank" rel="noopener noreferrer sponsored">👉 최저가 보기</a>
