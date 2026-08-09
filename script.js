@@ -18,8 +18,11 @@ const categories = [
       { image: "tomato.png", name: "성분에디터 그린토마토 포어 리프팅 앰플 플러스 30ml, 2개", desc: "모공 탄력 케어!", link: "https://toss.im/_m/LEw80DlD" },
 { image: "cream.png", name: "레이디어 히알루론산 촉촉 수분크림 100ml, 1개", desc: "촉촉한 수분 케어!", link: "https://toss.im/_m/x29i1Vb6" },
 { image: "mist.png", name: "닥터멜락신 마이너스 오점칠 오일 미스트 100ml, 1개", desc: "간편한 미스트 케어!", link: "https://toss.im/_m/ZPC8GPAz" },
-{ image: "madeca.png", name: "센텔리안24 마데카 크림 타이트 리프팅 50ml, 5개 + 15ml, 2개", desc: "탄탄한 리프팅 케어!", link: "https://toss.im/_m/7wRcB6Tb" }
-    ]
+{ image: "madeca.png", name: "센텔리안24 마데카 크림 타이트 리프팅 50ml, 5개 + 15ml, 2개", desc: "탄탄한 리프팅 케어!", link: "https://toss.im/_m/7wRcB6Tb" },
+{ image: "suncream.png", name: "AHC 마스터즈 아쿠아 리치 선크림 SPF50+ PA++++, 30ml, 2개", desc: "매일 챙기는 선케어!", link: "https://link.coupang.com/a/f4kaVOJN1g", store: "coupang" },
+{ image: "deepclean.png", name: "뉴트로지나 딥클린 포밍 클렌저, 100g, 3개", desc: "깔끔한 데일리 클렌징!", link: "https://link.coupang.com/a/f4kQQKRUvk", store: "coupang" },
+{ image: "maskpack.png", name: "닥터지 레드 블레미쉬 쿨 수딩 마스크, 10개입, 1개", desc: "간편하게 즐기는 데일리 케어!", link: "https://link.coupang.com/a/f4kgPylCai", store: "coupang" },
+{ image: "hairessence.png", name: "미쟝센 퍼펙트 베이스업 헤어 에센스, 200ml, 2개", desc: "간편한 데일리 헤어 케어!", link: "https://link.coupang.com/a/f4kqOfB5FI", store: "coupang" }    ]
   },
   {
     id: "living",
@@ -29,8 +32,12 @@ const categories = [
       { image: "shoes.png", name: "신발 세탁망 그레이 19×39cm, 2개", desc: "신발 세탁을 간편하게!", link: "https://toss.im/_m/fL6eQNbs" },
 { image: "multi.png", name: "무아스 더 큐브 마그넷 3구 USB 고용량 멀티탭", desc: "깔끔하고 편리한 멀티탭!", link: "https://toss.im/_m/fsyl0Ibs" },
 { image: "cleaner.png", name: "무아스 길이조절 올인원 스탠드 테이블 클리너", desc: "구석구석 간편한 청소!", link: "https://toss.im/_m/zns3g602" },
-{ image: "wipes.png", name: "크리넥스 마이비데 클린케어 화장실용 물티슈 40매, 9팩", desc: "깔끔한 욕실 필수템!", link: "https://toss.im/_m/vDaQbRld" }
-    ]
+{ image: "wipes.png", name: "크리넥스 마이비데 클린케어 화장실용 물티슈 40매, 9팩", desc: "깔끔한 욕실 필수템!", link: "https://toss.im/_m/vDaQbRld" },
+{ image: "fan.png", name: "알리사 100단 아이스 터보 MAX 휴대용 선풍기", desc: "휴대하기 좋은 시원한 바람!", link: "https://link.coupang.com/a/f4hAOwhlJY",store: "coupang" },
+{ image: "detergent.png", name: "퍼실 딥클린 초미세세탁 라벤더젤 맥스 드럼용 액체세제 리필", desc: "매일 쓰는 세탁 필수템!", link: "https://link.coupang.com/a/f4hNHk6xxI",store: "coupang" },
+{ image: "sofa.png", name: "도모디자인 아르티제 가죽 3인용 소파 + 쿠션 2p 세트 방문설치", desc: "편안한 공간을 위한 쇼파!", link: "https://link.coupang.com/a/f4hUQW1fW0",store: "coupang" },
+{ image: "blocks.png", name: "벨베이비 영유아 휠 자석블럭 빅사이즈 35mm, 파스텔, 1개", desc: "재미있게 즐기는 자석블럭!", link: "https://link.coupang.com/a/f4h3dMU2Am",store: "coupang" },   
+]
   },
   {
     id: "health",
@@ -74,6 +81,7 @@ function productCard(product) {
       <div class="product-image">
   ${product.image ? `<img src="${product.image}" alt="${product.name}">` : product.emoji}
 </div>
+${product.store === "coupang" ? '<span class="store-badge coupang">쿠팡</span>' : ''}
       <h3>${product.name}</h3>
       <p>${product.desc}</p>
       <a class="price-link" href="${product.link}" target="_blank" rel="noopener noreferrer sponsored">👉 최저가 보기</a>

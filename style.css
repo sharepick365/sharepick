@@ -516,7 +516,22 @@ button {
 }
 .product-image img {
   width: 100%;
-  height: 190px;
+  height: 180px;
   object-fit: contain;
   display: block;
+}
+.store-badge {
+  display: block;
+  width: fit-content;
+  margin: 4px 0 2px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.store-badge.coupang {
+  background: #e53935;
+  color: #fff;
 }
