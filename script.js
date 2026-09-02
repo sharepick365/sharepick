@@ -156,7 +156,7 @@ categorySections.addEventListener("click", event => {
 
   if (button.dataset.more === "food") {
     window.open(
-      "https://link.coupang.com/a/gIW1k9eN0C",
+      "https://link.coupang.com/a/gIXNZLgsKa",
       "_blank",
       "noopener,noreferrer"
     );
