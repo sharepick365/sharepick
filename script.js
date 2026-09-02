@@ -178,6 +178,14 @@ categorySections.addEventListener("click", event => {
     );
     return;
   }
+   if (button.dataset.more === "health") {
+    window.open(
+      "https://link.coupang.com/a/gIYtJSJ2eO",
+      "_blank",
+      "noopener,noreferrer"
+    );
+    return;
+  }
   alert(`${button.dataset.more} 카테고리 상품을 추가할 예정입니다.`);
 });
 
