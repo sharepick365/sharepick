@@ -150,9 +150,19 @@ document.querySelector(".category-nav").addEventListener("click", event => {
   });
 });
 
-categorySections.addEventListener("click", event => {
+sections.addEventListener("click", event => {
   const button = event.target.closest("[data-more]");
   if (!button) return;
+
+  if (button.dataset.more === "food") {
+    window.open(
+      "https://link.coupang.com/a/gIW1k9eN0C",
+      "_blank",
+      "noopener,noreferrer"
+    );
+    return;
+  }
+
   alert(`${button.dataset.more} 카테고리 상품을 추가할 예정입니다.`);
 });
 
