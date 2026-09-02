@@ -150,7 +150,7 @@ document.querySelector(".category-nav").addEventListener("click", event => {
   });
 });
 
-sections.addEventListener("click", event => {
+categorySections.addEventListener("click", event => {
   const button = event.target.closest("[data-more]");
   if (!button) return;
 
