@@ -54,8 +54,8 @@ const categories = [
 
 const specialSlides = [
   [
-   { image: "dakgalbi.png", name: "순살 닭갈비 500g × 2개", desc: "69% 특가 · 10,900원", link: "https://toss.im/_m/rcCpLxri" },
-    { image: "aloe.png", name: "알로에베라 모이스처 수딩젤 300ml × 5개", desc: "87% 특가 · 7,300원", link: "https://toss.im/_m/BeEOU487" },
+   { image: "dakgalbi.png", name: "순살 닭갈비 500g × 2개", desc: "매콤하게 즐기는 순살 닭갈비", link: "https://toss.im/_m/rcCpLxri" },
+    { image: "aloe.png", name: "알로에베라 모이스처 수딩젤 300ml × 5개", desc: "촉촉하게 채우는 수딩 케어", link: "https://toss.im/_m/BeEOU487" },
     { image: "hongsam.png", name: "풍년보감 고려홍삼정 에브리데이100", desc: "간편하게 챙기는 홍삼!", link: "https://toss.im/_m/vbb6F8Nj" }
   ],
   [
